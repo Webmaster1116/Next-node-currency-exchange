@@ -1,0 +1,26 @@
+.convertor {
+    min-width: 400px;
+    /* background-color: rgba(12, 15, 19, 0.5); */
+}
+
+.convertor-input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 0px;
+    margin-bottom: 0em;
+}
+
+.convertor label {
+    /* background-color: #060f25; */
+    color: white;
+    border: white 1px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100px;
+}
+
+.conv-icon {
+    border-radius: 50%;
+    font-size: 32px;
+}

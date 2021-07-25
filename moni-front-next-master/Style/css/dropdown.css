@@ -1,0 +1,36 @@
+.opt-custom {
+    color: black !important;
+    /* list-decoration: none; */
+    /* background: white !important; */
+    list-style-type: none;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 13px;
+}
+
+.opt-custom:hover {
+    background: orange !important;
+    color: white !important;
+    padding-top: 2px;
+}
+
+.li-cust {
+    position: absolute;
+    z-index: 1000;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: white;
+    border-width: 2px;
+    min-width: 100px;
+    /* // margin-left: 45px; */
+    width: 100%;
+    /* // height: 50px;
+    // padding-left: 25px;
+    // padding-right: 13px; */
+    cursor: pointer;
+}

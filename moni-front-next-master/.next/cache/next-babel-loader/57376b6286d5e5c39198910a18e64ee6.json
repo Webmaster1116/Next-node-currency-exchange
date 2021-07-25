@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Axios from 'axios';\n\nconst verifyMail = async body => {\n  const res = await Axios.post('https://api.moni.pe/api/verify/resend', body);\n};\n\nexport default verifyMail;","map":null,"metadata":{},"sourceType":"module"}

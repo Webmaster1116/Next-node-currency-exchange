@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Axios from 'axios';\n\nconst GetProfile = async token => {\n  const header = {\n    headers: {\n      'x-auth-token': token\n    }\n  };\n  const resProfile = await Axios.get('https://api.moni.pe/api/profiles/', header);\n  return resProfile.data[0];\n};\n\nexport default GetProfile;","map":null,"metadata":{},"sourceType":"module"}

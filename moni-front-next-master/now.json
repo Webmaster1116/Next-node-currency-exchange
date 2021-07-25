@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "rewrites": [{
+        "source": "/sw.js",
+        "destination": "/_next/static/service-worker.js"
+    }]
+
+}

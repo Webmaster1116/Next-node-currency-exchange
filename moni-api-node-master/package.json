@@ -1,0 +1,37 @@
+{
+	"name": "Bitcoin_web_api",
+	"version": "1.0.0",
+	"description": "API for bitcoin website",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"server": "nodemon server.js"
+	},
+	"author": "",
+	"keywords": [],
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cheerio": "^1.0.0-rc.3",
+		"config": "^3.1.0",
+		"cors": "^2.8.5",
+		"ejs": "^3.1.3",
+		"express": "^4.16.4",
+		"express-validator": "^5.3.1",
+		"googleapis": "^51.0.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.5.8",
+		"multer": "^1.4.2",
+		"node-cache": "^5.1.2",
+		"node-cron": "^2.0.3",
+		"node-fetch": "^2.6.0",
+		"nodemailer": "^6.4.6",
+		"request": "^2.88.2",
+		"web-push": "^3.4.4"
+	},
+	"devDependencies": {
+		"concurrently": "^4.1.0",
+		"nodemon": "^1.19.0"
+	}
+}

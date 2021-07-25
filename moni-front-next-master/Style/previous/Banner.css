@@ -1,0 +1,24 @@
+.clients {
+    padding: 0;
+    background-color: black;
+}
+
+.clients .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 120px;
+}
+
+.clients .client-logo img {
+    height: 40px;
+}
+
+.clients .client-logo:hover img {
+    /* transform: scale(1.2); */
+}
+
+.clients img {
+    /* transition: all 0.4s ease-in-out; */
+}

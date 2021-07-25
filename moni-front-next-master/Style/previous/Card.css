@@ -1,0 +1,17 @@
+.step {
+    /* width: 550px; */
+    color: black;
+}
+
+
+.left {
+    border-left-width: 5px;
+    border-left-color: black;
+    margin-left: -15px;
+}
+
+.right {
+    border-right-width: 5px;
+    border-right-color: black;
+    margin-right: -15px;
+}

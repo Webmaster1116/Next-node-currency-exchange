@@ -1,0 +1,9 @@
+[build]
+  publish = "out"
+  command = "npm run build && next export"
+
+[[redirects]]
+  from = "/transactionDetails/*"
+  to = "/transactionDetails/[id].html"
+  status = 200
+  force = true

@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://rinem:rinem@cluster0-tn0uz.mongodb.net/moni?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}

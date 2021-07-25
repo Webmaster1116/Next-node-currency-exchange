@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nexport const Home_data = () => {\n  return {\n    title: \"El mejor tipo de cambio para cambiar dólares y soles online en Lima, Perú\"\n  };\n};\nexport default Home_data;","map":null,"metadata":{},"sourceType":"module"}

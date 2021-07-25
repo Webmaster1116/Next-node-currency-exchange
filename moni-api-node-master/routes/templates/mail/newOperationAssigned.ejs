@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+    </style>
+
+    <style>
+        .container {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .date {
+            margin-top: 15px;
+            width: 100%;
+            float: right;
+        }
+
+        .bg-black {
+            background-color: black;
+            color: white;
+            padding: 10px;
+
+        }
+
+        .date {
+            position: absolute;
+            right: 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+
+        .title {
+            margin-left: 10px;
+        }
+
+        .mg {
+            margin-left: 10px;
+        }
+
+        .heading {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-start {
+            text-align: start;
+        }
+
+        hr {
+            width: 90%;
+            color: darkgrey;
+            border-width: 1px;
+            background-color: darkgrey;
+        }
+
+        .width-custom {
+            width: 50%;
+        }
+
+        .ml-5 {
+            margin-left: 30px;
+        }
+
+        .text-right {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        span {
+            color: #000 !important;
+        }
+
+        p {
+            color: #000;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .width-custom {
+                width: 100%;
+            }
+
+            .ml-5 {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container text-center width-custom">
+        <div class="text-start">
+            <p class="date"><%= date %></p>
+            <div class="heading">
+                <h2 class="title text-center">Pedido realizado por el usuario</h2>
+                <h3 class="title text-center">Hola, se te ha asignado una nueva operación como agente.</h3>
+            </div>
+            <div class="bg-black">
+                <div class="mg ml-5">
+                    <h4>Nueva operación asignada</h4>
+                </div>
+            </div>
+            <div class="ml-5">
+                <div class="details">
+                    <h4>Detalles</h4>
+                    <div class="profile">
+                        <p><%= profileDetails.firstName %> <%= profileDetails.lastName %></p>
+                    </div>
+                    <div class="bank">
+                        <!-- <h4>Bank Account Details:</h4> -->
+                        <p><%= bankDetails.receiveBank.bankName %></p>
+                        <p><%= bankDetails.receiveBank.accountNumber %></p>
+                        <p><%= bankDetails.receiveBank.type %></p>
+                    </div>
+                    <hr />
+                    <h4>Detalles de la agente</h4>
+                    <div class="profile">
+                        <p><%= agent.name %></p>
+                        <p><%= agent.email %></p>
+                    </div>
+                    <div class="bank">
+                        <p><%= agentBank.bankName %></p>
+                        <p><%= agentBank.accountNumber %></p>
+                        <!-- <p><%= agentBank.type %></p> -->
+                    </div>
+
+                    <hr />
+
+                    <div class="transaction">
+                        <div class="">
+                            <p><span>Cantidad:</span><span class="text-right"> <%= transaction.fromAmount %>
+                                    <%= transaction.fromCurrency %></span></p>
+                            <p><span>Recibir:</span><span class="text-right"> <%= transaction.toAmount %>
+                                    <%= transaction.toCurrency %></span></p>
+                        </div>
+                        <hr />
+                    </div>
+                    <p>Si tiene alguna pregunta, simplemente responda a este correo electrónico o póngase en contacto
+                        con nuestro equipo de soporte para obtener ayuda.
+                    </p>
+                    <p>Salud,
+                        <br>The Moni Team</p>
+
+                    <tr>
+                        <td>
+                            <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0"
+                                role="presentation">
+                                <tr>
+                                    <td class="content-cell txt-center">
+                                        <p class="f-fallback sub align-center">&copy; 2020 Moni. All rights
+                                            reserved.</p>
+                                        <p class="f-fallback sub align-center">
+                                            Moni
+                                            <br>1234 Street Rd.
+                                            <br>Suite 1234
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

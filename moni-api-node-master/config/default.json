@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://rinem:rinem@cluster0-tn0uz.mongodb.net/moni?retryWrites=true&w=majority",
+    "jwtSecret": "secret",
+    "exchange": "https://openexchangerates.org/api/latest.json?app_id=5cd2e033932a46f9803803de952f7a90"
+}

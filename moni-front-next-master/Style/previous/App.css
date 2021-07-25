@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+a,
+a:hover,
+a::selection {
+    color: inherit;
+}
+
+body {
+    font: 16px/1.6 Arial, sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 1.1 !important;
+}
+
+
+div {
+    margin: 0em;
+    padding: 0em;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+body {
+    background-color: #050e23;
+    color: white;
+}

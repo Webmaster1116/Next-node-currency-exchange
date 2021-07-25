@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Axios from 'axios';\n\nconst PutExchange = async (id, compra, venta) => {\n  const resProfile = await Axios.put('https://api.moni.pe/api/exchange/' + id, {\n    compra,\n    venta\n  });\n  return resProfile;\n};\n\nexport default PutExchange;","map":null,"metadata":{},"sourceType":"module"}

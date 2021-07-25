@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+    </style>
+
+    <style>
+        .container {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .date {
+            margin-top: 15px;
+            width: 100%;
+            float: right;
+        }
+
+        .bg-black {
+            background-color: black;
+            color: white;
+            padding: 10px;
+
+        }
+
+        .date {
+            position: absolute;
+            right: 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+
+        .title {
+            margin-left: 10px;
+        }
+
+        .mg {
+            margin-left: 10px;
+        }
+
+        .heading {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        hr {
+            background: #bfc0c1;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <p class="date"><%= date %></p>
+        <hr />
+        <div class="heading">
+            <h2 class="title text-center">Success</h2>
+            <h3 class="title text-center">Your order is completed</h3>
+        </div>
+        <div class="bg-black">
+            <div class="mg">
+                <h4>Payment Successful</h4>
+            </div>
+        </div>
+        <div class="details">
+            <h4>Details</h4>
+            <div class="profile">
+                <p><%= profileDetails.firstName %> <%= profileDetails.lastName %></p>
+            </div>
+            <div class="bank">
+                <h4>Account Details:</h4>
+                <p><%= bankDetails.bankName %></p>
+                <p><%= bankDetails.accountNumber %></p>
+                <p><%= bankDetails.type %></p>
+            </div>
+            <hr />
+            <div class="transaction">
+                <div class="">
+                    <p>Amount: <%= transaction.amountToPay %> <%= transaction.currencyTo %></p>
+                    <p>Receive: <%= transaction.amountReceive %> <%= transaction.currencyFrom %></p>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
